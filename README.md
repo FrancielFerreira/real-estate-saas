@@ -1,7 +1,8 @@
-# Real Estate SaaS
+# React + Vite
 
-![RealEstateSaaS](./screenshot-cover-app.png)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-![GitHub License](https://img.shields.io/github/license/FrancielFerreira/real-estate-saas)
+Currently, two official plugins are available:
 
-> Design credits: @illiyinstudio | [Dribble](https://dribbble.com/illiyinstudio) | [Behance](https://www.behance.net/illiyin)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
