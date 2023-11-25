@@ -1,0 +1,7 @@
+.home {
+  min-height: 100vh;
+}
+.container__home {
+  padding: 8rem 0;
+  max-width: 560px;
+}
