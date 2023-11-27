@@ -26,7 +26,7 @@ const Header = () => {
         </nav>
         <div className={`d-flex ${styles.header__cta}`}>
           <Button classe="alt" text="Login" />
-          <Button text="Sing-Up" />
+          <Button text="Sing Up" />
         </div>
       </div>
     </header>
