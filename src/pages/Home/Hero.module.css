@@ -1,12 +1,11 @@
 .hero {
-  min-height: 100vh;
   /* background: url(../../../public/bg-hero.jpg) no-repeat center right; */
   /* background-size: contain; */
   background-color: var(--primary-color-100);
 }
 
 .hero__content {
-  padding: 8rem 0;
+  padding: 9rem 0 4rem;
   max-width: 540px;
 }
 

@@ -89,14 +89,16 @@ a {
   font-size: 3rem;
 }
 
+p,
 .text,
 .text-big,
 .text-bold {
-  font: 500 1rem var(--type-first);
+  font: 400 1rem var(--type-first);
   color: var(--primary-color-900);
 }
 .text-big {
   font-size: 1.25rem;
+  font-weight: 500;
 }
 .text-bold {
   font-weight: 600;
