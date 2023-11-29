@@ -5,6 +5,7 @@
   background-color: #FAFAFE;
   box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
   padding: 0 calc(100% - 1376px);
+  z-index: 9;
 }
 .header__container {
   display: flex;

@@ -1,13 +1,17 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-// pages
-import Home from './pages/Home/Home';
-import Rent from './pages/Rent/Rent';
-import Buy from './pages/Buy/Buy';
-import Sell from './pages/Sell/Sell';
+// components
 import Header from './components/Header';
 import Footer from './components/Footer';
+
+// pages
+import Home from './pages/Home/Home';
+import Aluguel from './pages/Aluguel/Aluguel';
+import Compra from './pages/Compra/Compra';
+import Venda from './pages/Venda/Venda';
+import Imoveis from './pages/Imoveis/Imoveis';
+import Page404 from './pages/Page404/Page404';
 
 function App() {
   return (
@@ -16,9 +20,11 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/rent/*" element={<Rent />} />
-          <Route path="/buy/*" element={<Buy />} />
-          <Route path="/sell/*" element={<Sell />} />
+          <Route path="/aluguel/*" element={<Aluguel />} />
+          <Route path="/compra/*" element={<Compra />} />
+          <Route path="/venda/*" element={<Venda />} />
+          <Route path="/imoveis/*" element={<Imoveis />} />
+          <Route path="*" element={<Page404 />} />
         </Routes>
         <Footer />
       </BrowserRouter>

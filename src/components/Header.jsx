@@ -15,18 +15,18 @@ const Header = () => {
           </NavLink>
         </div>
         <nav className={`d-flex ${styles.header__navmenu}`}>
-          <NavLink to={'/rent'}>Rent</NavLink>
-          <NavLink to={'/buy'}>Buy</NavLink>
-          <NavLink to={'/sell'}>Rent</NavLink>
-          <NavLink to={'/properties'}>Properties</NavLink>
+          <NavLink to={'/aluguel'}>Aluguel</NavLink>
+          <NavLink to={'/compra'}>Compra</NavLink>
+          <NavLink to={'/venda'}>Venda</NavLink>
+          <NavLink to={'/imoveis'}>Imóveis</NavLink>
           <div className={styles.header__navmenu_dropdown}>
             <NavLink to={'/'}>Submenu</NavLink>
             <NavLink to={'/'}>Submenu</NavLink>
           </div>
         </nav>
         <div className={`d-flex ${styles.header__cta}`}>
-          <Button classe="alt" text="Login" />
-          <Button text="Sing Up" />
+          <Button classe="alt" text="Entrar" />
+          <Button text="Cadastre-se" />
         </div>
       </div>
     </header>

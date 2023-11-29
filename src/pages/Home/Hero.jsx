@@ -3,6 +3,15 @@ import styles from './Hero.module.css';
 import Button from '../../components/Button/Button';
 
 const Hero = () => {
+  function handleTabSearch(event) {
+    event.preventDefault();
+    const tabButtonsSearch = document.querySelectorAll('[data-nav-search]');
+    tabButtonsSearch.forEach((item) =>
+      item.setAttribute('data-nav-search', 'hide'),
+    );
+    event.target.setAttribute('data-nav-search', 'show');
+  }
+
   return (
     <section className={styles.hero}>
       <div className="container">
@@ -36,26 +45,45 @@ const Hero = () => {
           </div>
 
           <div className={styles.hero__search}>
-            <nav className={styles.hero__search_nav}>
-              <span className="text" data-nav-search="show">
-                Rent
-              </span>
-              <span className="text" data-nav-search="hide">
+            <nav className={`${styles.hero__search_nav} shadow`}>
+              <span
+                className="text"
+                data-nav-search="hide"
+                onClick={handleTabSearch}
+              >
                 Buy
               </span>
-              <span className="text" data-nav-search="hide">
+              <span
+                className="text"
+                data-nav-search="show"
+                onClick={handleTabSearch}
+              >
+                Rent
+              </span>
+              <span
+                className="text"
+                data-nav-search="hide"
+                onClick={handleTabSearch}
+              >
                 Sell
               </span>
             </nav>
-            <div className={styles.hero__search_content}>
-              <p>
-                Localização<span className="text-bold">Cidade, ES</span>
-              </p>
-              <p>
-                Tipo<span className="text">Apartamento</span>
-              </p>
+            <form className={`${styles.hero__search_content} shadow`}>
+              <div>
+                <label htmlFor="">Localização</label>
+                <input placeholder="Cidade, ES" className="text" />
+              </div>
+              <div>
+                <label htmlFor="">Tipo</label>
+                <select name="" id="">
+                  <option value="apartamento">Apartamento</option>
+                  <option value="Casa">Casa</option>
+                  <option value="sitio">Sítio</option>
+                  <option value="kitnet">Kitnet</option>
+                </select>
+              </div>
               <Button text="Search" />
-            </div>
+            </form>
           </div>
         </div>
       </div>

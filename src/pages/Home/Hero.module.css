@@ -56,10 +56,23 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 0 .25rem .25rem .25rem;
-  box-shadow: 0 8px 16px rgb(0 0 0 / 8%);
 }
 
-.hero__search_content span {
+.hero__search_content label {
   display: block;
-  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.hero__search_content input,
+.hero__search_content select,
+.hero__search_content select option {
+  width: 100%;
+  outline: none;
+  border: none;
+  font: 500 1rem var(--type-first);
+  color: var(--primary-color-900);
+}
+.hero__search_content input::placeholder {
+  font: 500 1rem var(--type-first);
+  color: var(--primary-color-900);
 }
