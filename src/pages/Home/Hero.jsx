@@ -48,14 +48,14 @@ const Hero = () => {
             <nav className={`${styles.hero__search_nav} shadow`}>
               <span
                 className="text"
-                data-nav-search="hide"
+                data-nav-search="show"
                 onClick={handleTabSearch}
               >
                 Buy
               </span>
               <span
                 className="text"
-                data-nav-search="show"
+                data-nav-search="hide"
                 onClick={handleTabSearch}
               >
                 Rent
